@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<title>Menu Project</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Garamond", cursive}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90%;
+}
+</style>
+<body>
+
+
+
+<!-- Menu -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Menu (Chinese Fusion Style)</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-green">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Desert');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Starters</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Main Course');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Main Entrees</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Deserts</div>
+      </a>
+    </div>
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>The Great Wall Of Chocolate</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$12.50</span></h1>
+      <p class="w3-text-grey">Six layers of chocolate cake, chocolate frosting, semi-sweet chocolate chips</p>
+      <hr>
+   
+      <h1><b>Banana Spring Rolls</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+      <p class="w3-text-grey">Crispy bites of banana, caramel-vanilla drizzle, coconut-pineapple ice cream</p>
+      <hr>
+      
+      <h1><b>Bao Donuts</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$7.00</span></h1>
+      <p class="w3-text-grey">Rolled in cinnamon sugar with miso-caramel and chocolate dipping sauces</p>
+      <hr>
+
+      <h1><b>Vietnamese Chocolate Lava Cake</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$15.50</span></h1>
+      <p class="w3-text-grey">Molten chocolate cake, hint of roasted coffee, milk chocolate ganache, vanilla ice cream</p>
+      <hr>
+
+      <h1><b>New York-Style Cheesecake</b> <span class="w3-tag w3-green w3-round"></span><span class="w3-right w3-tag w3-dark-grey w3-round">$15.00</span></h1>
+      <p class="w3-text-grey">Creamy cheesecake, graham cracker crust, fresh berries</p>
+      <hr>
+
+      <h1><b>Fire & Ice</b> <span class="w3-tag w3-grey w3-round"></span><span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+      <p class="w3-text-grey">Bread pudding and vanilla ice cream encased in chocolate, ignited with rum and served flaming</p>
+    </div>
+
+    <div id="Main Course" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Korean Bulgogi Steak</b> <span class="w3-tag w3-grey w3-round"></span> <span class="w3-right w3-tag w3-dark-grey w3-round">$20.50</span></h1>
+      <p class="w3-text-grey">Savory bulgogi glaze, New York strip, crisped potatoes, onion</p>
+      <hr>
+   
+      <h1><b>Mongolian Beef</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$20.50</span></h1>
+      <p class="w3-text-grey">Sweet soy glaze, flank steak, garlic, green onion</p>
+      <hr>
+      
+      <h1><b>Crispy Honey</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
+      <p class="w3-text-grey">Lightly battered, tangy honey sauce, green onion</p>
+      <hr>
+
+      <h1><b>Salt & Pepper Prawns</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span></h1>
+      <p class="w3-text-grey">Crisp prawns, aromatics, chili peppers, tossed in a spicy chili butter</p>
+    </div>
+
+
+    <div id="Desert" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Tempura Calamari & Vegetables</b> <span class="w3-tag w3-grey w3-round"></span><span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+      <p class="w3-text-grey">Crisp medley of calamari, bell pepper, baby spinach, carrots, sriracha honey dipping sauce</p>
+      <hr>
+   
+      <h1><b>Chili-garlic green beans</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
+      <p class="w3-text-grey">Fiery red chili sauce, fresh garlic, Sichuan preserves</p>
+      <hr>
+      
+      <h1><b>Kung Pao brussels sprouts</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
+      <p class="w3-text-grey">Wok-charred Brussels sprouts, peanuts, chili pods, Kung Pao sauce</p>
+      <hr>
+      
+      <h1><b>Dynamite Shrimp</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+      <p class="w3-text-grey">Tempura-battered, tossed with a sriracha aioli</p>
+    </div><br>
+
+  </div>
+</div>
+    
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
